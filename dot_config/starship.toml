@@ -17,6 +17,7 @@ $golang\
 $helm\
 $python\
 $terraform\
+$kubernetes\
 $aws\
 $gcloud\
 $env_var\
@@ -47,6 +48,10 @@ disabled = true
 [time]
 disabled = false
 style = "Grey"
+
+[kubernetes]
+format = 'on [⛵ $context \($namespace\)](bold green) '
+disabled = false
 
 [helm]
 format = 'format = "via [🪖 $version](bold white)'
