@@ -1,0 +1,52 @@
+# Which is equivalent to
+command_timeout = 1500
+
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$golang\
+$helm\
+$python\
+$terraform\
+$aws\
+$gcloud\
+$env_var\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$time\
+$status\
+$character"""
+
+
+[aws]
+style = "Bold Blue"
+
+[username]
+disabled = true
+# show_always = true
+# format = "[$user]($style) in "
+# style_user = "Bold Green"
+
+[status]
+disabled = false
+
+[gcloud]
+disabled = true
+
+[time]
+disabled = false
+style = "Grey"
+
+[helm]
+format = 'format = "via [🪖 $version](bold white)'
