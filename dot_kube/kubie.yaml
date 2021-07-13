@@ -1,0 +1,5 @@
+shell: fish
+
+prompt:
+  disable: true
+  fish_use_rprompt: false
