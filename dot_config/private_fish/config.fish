@@ -27,7 +27,7 @@ alias cat='bat'
 alias awslogin='saml2aws login --force && eval (saml2aws script)'
 
 # Nord theme
-eval (dircolors -c ~/.dircolors/dircolors)
+test -r .dircolors/dircolors && eval (dircolors -c ~/.dircolors/dircolors)
 set -x BAT_THEME Nord
 set -x --append FZF_DEFAULT_OPTS '--color=fg:#e5e9f0,bg:#3b4252,hl:#81a1c1 --color=fg+:#e5e9f0,bg+:#3b4252,hl+:#81a1c1'
 set -x --append FZF_DEFAULT_OPTS '--color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac'
