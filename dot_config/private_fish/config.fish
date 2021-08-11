@@ -14,7 +14,6 @@ if status is-interactive
     alias c='codium'
     alias vim='nvim'
     alias k='kubectl'
-    alias g='rg'
     alias dig='dog'
     alias host='dog'
     alias top='glances'
