@@ -11,17 +11,8 @@ if status is-interactive
 
     # Fancy commands
     alias curl='curlie'
-    alias c='codium'
-    alias vim='nvim'
     alias k='kubectl'
-    alias dig='dog'
-    alias host='dog'
-    alias top='glances'
     alias f='fd'
-    alias cat='bat'
-
-    # Useful aliases
-    alias awslogin='saml2aws login --force && eval (saml2aws script)'
 
     # Nord theme
     test -r .dircolors/dircolors && eval (dircolors -c ~/.dircolors/dircolors)
