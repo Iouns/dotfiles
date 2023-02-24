@@ -13,6 +13,7 @@ if status is-interactive
     alias curl='curlie'
     alias k='kubectl'
     alias f='fd'
+    alias g='git'
 
     # Nord theme
     test -r .dircolors/dircolors && eval (dircolors -c ~/.dircolors/dircolors)
@@ -22,10 +23,10 @@ if status is-interactive
     set -x --append FZF_DEFAULT_OPTS '--color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
 
     # Completions
-    flux completion fish | source
     zoxide init fish | source
     starship init fish | source
-    yq shell-completion fish | source
+    flux completion fish | source
     helm completion fish | source
-
+    kubectl completion fish | source
+    talosctl completion fish | source
 end
