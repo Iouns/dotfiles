@@ -28,5 +28,4 @@ if status is-interactive
     flux completion fish | source
     helm completion fish | source
     kubectl completion fish | source
-    talosctl completion fish | source
 end
