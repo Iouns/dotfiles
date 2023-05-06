@@ -3,8 +3,8 @@ sentriz/fish-pipenv
 oh-my-fish/plugin-aws
 oh-my-fish/plugin-pyenv
 patrickf1/colored_man_pages.fish
-jethrokuan/fzf
 gazorby/fish-abbreviation-tips
 edc/bass
 iouns/ossl.fish
 jhillyerd/plugin-git
+patrickf1/fzf.fish
