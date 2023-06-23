@@ -14,13 +14,15 @@ if status is-interactive
     alias k='kubectl'
     alias f='fd'
     alias g='git'
+    alias c='bat'
 
-    # Nord theme
-    test -r .dircolors/dircolors && eval (dircolors -c ~/.dircolors/dircolors)
-    set -x BAT_THEME Nord
-    set -x --append FZF_DEFAULT_OPTS '--color=fg:#e5e9f0,bg:#3b4252,hl:#81a1c1 --color=fg+:#e5e9f0,bg+:#3b4252,hl+:#81a1c1'
-    set -x --append FZF_DEFAULT_OPTS '--color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac'
-    set -x --append FZF_DEFAULT_OPTS '--color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
+    set -x LS_COLORS (vivid generate catppuccin-macchiato)
+    set -x --append FZF_DEFAULT_OPTS '--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796'
+    set -x --append FZF_DEFAULT_OPTS '--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6'
+    set -x --append FZF_DEFAULT_OPTS '--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796'
+
+    # Disable greeting
+    set -g fish_greeting
 
     # Completions
     zoxide init fish | source
