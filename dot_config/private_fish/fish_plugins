@@ -9,3 +9,5 @@ iouns/ossl.fish
 jhillyerd/plugin-git
 patrickf1/fzf.fish
 catppuccin/fish
+wfxr/forgit
+danhper/fish-ssh-agent
